@@ -1,7 +1,7 @@
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
+import javax.swing.*;
 
 public class SnakeGame extends JPanel implements ActionListener, KeyListener {
     // Game constants (board size, snake unit size, etc.)
@@ -60,14 +60,7 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
 
     public void draw(Graphics g) {
         if (running) {
-            // Draw grid lines (optional)
-            /*
-            for (int i = 0; i < HEIGHT / UNIT_SIZE; i++) {
-                g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, HEIGHT);
-                g.drawLine(0, i * UNIT_SIZE, WIDTH, i * UNIT_SIZE);
-            }
-            */
-            
+
             // Draw food
             g.setColor(Color.RED);
             g.fillOval(foodX, foodY, UNIT_SIZE, UNIT_SIZE);
@@ -229,11 +222,11 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        // Not used
+        // Do not neet to use, however KeyLister requires a reference to all of its methods
     }
 
     @Override
     public void keyTyped(KeyEvent e) {
-        // Not used
+        // Do not neet to use, however KeyLister requires a reference to all of its methods
     }
 }
