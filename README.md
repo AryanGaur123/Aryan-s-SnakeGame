@@ -47,4 +47,3 @@ Through this project, I have practiced:
 - Score tracking
 - Game over screen with restart option
 - Classic Snake gameplay
-
